@@ -27,6 +27,7 @@ body {
   margin: 0;
   place-items: center;
   overflow-x: hidden;
+  padding: 2rem 0;
   background:
     radial-gradient(circle at 15% 15%, rgba(139, 92, 246, 0.2), transparent 34rem),
     radial-gradient(circle at 85% 80%, rgba(236, 72, 153, 0.16), transparent 32rem),
@@ -49,8 +50,8 @@ body {
 }
 
 .hero {
-  width: min(100% - 2rem, 42rem);
-  margin: 2rem auto;
+  width: min(calc(100% - 2rem), 42rem);
+  margin: auto;
   padding: clamp(2rem, 7vw, 4rem) clamp(1.25rem, 6vw, 3.5rem);
   border: 1px solid var(--surface-border);
   border-radius: 2rem;
@@ -70,6 +71,18 @@ body {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.intro {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
 }
 
 .information {
@@ -99,6 +112,13 @@ body {
   box-shadow: 0 8px 20px rgba(139, 92, 246, 0.22);
 }
 
+.email {
+  width: min(100%, 14rem);
+  margin-top: 0.85rem;
+  border-color: var(--surface-border);
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .btn:hover,
 .btn:focus-visible {
   transform: translateY(-3px);
@@ -108,18 +128,6 @@ body {
 .btn:focus-visible {
   outline: 3px solid rgba(255, 255, 255, 0.8);
   outline-offset: 3px;
-}
-
-footer {
-  width: min(100% - 2rem, 42rem);
-  margin: 0 auto 2rem;
-  text-align: center;
-}
-
-footer .btn {
-  min-width: min(100%, 14rem);
-  border-color: var(--surface-border);
-  background: rgba(255, 255, 255, 0.08);
 }
 
 .reveal {
