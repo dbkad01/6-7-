@@ -121,7 +121,7 @@ h1 {
   justify-content: center;
   min-height: 3.25rem;
   padding: 0.8rem 1.4rem;
-  border: 1px solid transparent;
+  border: 0.16px solid transparent;
   border-radius: var(--radius-pill);
   color: var(--text);
   font-family: "Space Grotesk", sans-serif;
